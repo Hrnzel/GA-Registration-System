@@ -1,0 +1,185 @@
+.btnAddUser{
+    -fx-background-color: lightgray , whitesmoke , whitesmoke;
+    -fx-background-insets: 0 -1 -1.3 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.btnAddUser:focused{
+    -fx-background-color: #10d3d7 , whitesmoke , whitesmoke;
+    -fx-background-insets: 0 -1 -1.7 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.background{
+    -fx-background-image: url(../Pictures/ocean.jpg);
+}
+
+.btnCounters{
+    -fx-background-color: rgba(12, 225, 170, 0.5);
+    -fx-text-fill: white;
+}
+
+.btnCounters:hover{
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+    -fx-text-fill: #0cc398;
+    -fx-cursor:hand;
+    
+}
+
+.btnCounters:hover .lblCounters{
+    -fx-cursor:hand;
+}
+
+.btnCounters:pressed{
+    -fx-background-color: #0cc398;
+}
+
+.body{
+    -fx-border-color: #0cc398;
+}
+
+.forgot{
+    -fx-cursor: hand;
+}
+
+.footer{
+    -fx-background-color: #dddddd;
+}
+
+.btnCam{
+    -fx-background-color: #0cc398;
+}
+
+.btnCam:hover{
+    -fx-background-color: #23eab7;
+    -fx-cursor: hand;
+}
+
+.btnCam:pressed{
+    -fx-background-color: #02aa77;
+}
+
+.btnPic{
+    -fx-background-color: #0cc398;
+    -fx-background-image: url(../Pictures/btnPic.PNG);
+}
+
+.btnPic:hover{
+    -fx-background-color: #23eab7;
+    -fx-cursor: hand;
+}
+
+.btnPic:pressed{
+    -fx-background-color: #02aa77;
+}
+
+.topBar{
+    -fx-background-color: #0cc398;
+}
+
+#pic{
+    -fx-border-width: 1px;
+    -fx-border-color: gray;
+    -fx-background-image: url(../Pictures/pic.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: white;
+    -fx-background-position: center center;
+}
+
+.minimize:hover{
+    -fx-background-color: #1cd398;
+}
+.minimize:pressed{
+    -fx-background-color: #06b885;
+}
+.exit:hover{
+    -fx-background-color: #ff2020;
+}
+
+.exit:pressed{
+    -fx-background-color: #8a0606;
+}
+
+.back{
+    -fx-background-image: url(../Pictures/left.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.back:hover{
+    -fx-background-color: #1cd398;
+}
+
+.back:pressed{
+    -fx-background-color: #06b885;
+}
+
+.switch{
+    -fx-background-image: url(../Pictures/rotate.png);
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.switch:hover{
+    -fx-background-color: #1cd398;
+}
+
+.switch:pressed{
+    -fx-background-color: #06b885;
+}
+
+.MainButtons{
+    -fx-effect: dropshadow( one-pass-box , black , 8 , 0.0 , 3 , 0 );
+    -fx-opacity: 0.5;
+}
+
+.MainButtons:hover{
+    -fx-cursor: hand;
+}
+
+.handStyle:hover{
+    -fx-cursor: hand;
+    -fx-background-position: 10px 10px;
+}
+
+#apalit{
+    -fx-background-image: url(../Pictures/Apalit.jpg);
+}
+
+#balanga{
+    -fx-background-image: url(../Pictures/Balanga.jpg);
+}
+
+#baliuag{
+    -fx-background-image: url(../Pictures/Baliuag.jpg);
+}
+
+#cruz{
+    -fx-background-image: url(../Pictures/Cruz.jpg);
+}
+
+#dinalupihan{
+    -fx-background-image: url(../Pictures/Dinalupihan.jpg);
+}
+
+#gapan{
+    -fx-background-image: url(../Pictures/Gapan.jpg);
+}
+
+#marilao{
+    -fx-background-image: url(../Pictures/Marilao.jpg);
+}
+
+#starosa{
+    -fx-background-image: url(../Pictures/StaRosa.jpg);
+}
+
+#sanmiguel{
+    -fx-background-image: url(../Pictures/SanMiguel.jpg);
+}
+
+#cabanas{
+    -fx-background-image: url(../Pictures/Cabanas.jpg);
+}
+
+#main{
+    -fx-background-image: url(../Pictures/Main.jpg);
+}

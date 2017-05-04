@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane fx:id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0" styleClass="body" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AboutController">
+   <header>
+      <Pane fx:id="topBar" onMouseDragged="#onDragged" onMousePressed="#onPressed" prefHeight="40.0" prefWidth="480.0" styleClass="topBar" stylesheets="@../CSS/Style.css">
+         <children>
+            <Label alignment="CENTER" layoutX="441.0" layoutY="1.0" onMouseClicked="#onExit" prefHeight="39.0" prefWidth="39.0" styleClass="exit" stylesheets="@../CSS/Style.css" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="8.0" text="About" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </header>
+   <content>
+      <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/Style.css">
+         <children>
+            <Label layoutX="150.0" layoutY="41.0" text="Photo Uploading App v1.2">
+               <font>
+                  <Font name="Segoe UI Semibold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_LEFT" layoutX="61.0" layoutY="86.0" lineSpacing="1.0" prefHeight="142.0" prefWidth="357.0" text="Photo Uploading App's main purpose is to upload pictures of LKBP's members for updating of records." wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </content>
+</DialogPane>

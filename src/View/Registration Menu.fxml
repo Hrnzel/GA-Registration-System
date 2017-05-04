@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" styleClass="body" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegistrationMenuController">
+   <children>
+      <Pane fx:id="topBar" onMouseDragged="#onDragged" onMousePressed="#onPressed" prefHeight="40.0" prefWidth="1024.0" styleClass="topBar" stylesheets="@../CSS/Style.css">
+         <children>
+            <Label fx:id="exit" alignment="CENTER" layoutX="984.0" layoutY="1.0" onMouseClicked="#onExit" prefHeight="39.0" prefWidth="39.0" styleClass="exit" stylesheets="@../CSS/Style.css" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="minimize" alignment="CENTER" layoutX="944.0" layoutY="1.0" onMouseClicked="#minimize" prefHeight="39.0" prefWidth="39.0" styleClass="minimize" stylesheets="@../CSS/Style.css" text="_" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="295.0" layoutY="5.0" text="General Assembly Registration System" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" onMouseClicked="#switchToPhotoApp" prefHeight="39.0" prefWidth="45.0" styleClass="switch" stylesheets="@../CSS/Style.css">
+               <tooltip>
+                  <Tooltip text="Switch to Photo Uploading App" />
+               </tooltip>
+            </Label>
+         </children></Pane>
+      <Button id="cabanas" fx:id="cabanas" alignment="CENTER" layoutX="34.0" layoutY="124.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" textFill="WHITE" />
+      <Button id="main" fx:id="main" layoutX="279.0" layoutY="124.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="cruz" fx:id="cruz" layoutX="525.0" layoutY="124.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="apalit" fx:id="apalit" layoutX="770.0" layoutY="124.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="balanga" fx:id="balanga" layoutX="34.0" layoutY="287.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="baliuag" fx:id="baliuag" layoutX="280.0" layoutY="287.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="gapan" fx:id="gapan" layoutX="526.0" layoutY="287.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="dinalupihan" fx:id="dinalupihan" layoutX="771.0" layoutY="287.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="marilao" fx:id="marilao" layoutX="158.0" layoutY="449.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="sanmiguel" fx:id="sanmiguel" layoutX="404.0" layoutY="449.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Button id="starosa" fx:id="starosa" layoutX="650.0" layoutY="449.0" onAction="#handleButtonAction" prefHeight="130.0" prefWidth="220.0" styleClass="MainButtons" stylesheets="@../CSS/Style.css" />
+      <Label fx:id="cabanas1" layoutX="78.0" layoutY="170.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="CABANAS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="main1" layoutX="350.0" layoutY="172.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="MAIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="cruz1" layoutX="599.0" layoutY="170.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="CRUZ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="apalit1" layoutX="832.0" layoutY="172.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="APALIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="balanga1" layoutX="77.0" layoutY="333.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="BALANGA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="baliuag1" layoutX="330.0" layoutY="333.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="BALIUAG" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="gapan1" layoutX="586.0" layoutY="333.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="GAPAN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="dinalupihan1" layoutX="783.0" layoutY="333.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="DINALUPIHAN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="starosa1" layoutX="695.0" layoutY="495.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="STA. ROSA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="sanmiguel1" layoutX="435.0" layoutY="495.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="SAN MIGUEL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label fx:id="marilao1" layoutX="209.0" layoutY="495.0" onMouseClicked="#selectBranch" styleClass="handStyle" stylesheets="@../CSS/Style.css" text="MARILAO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" spread="0.3" />
+         </effect>
+      </Label>
+      <Label layoutX="373.0" layoutY="74.0" text="SELECT YOUR BRANCH" textFill="#0cc398">
+         <font>
+            <Font name="Segoe UI Bold" size="26.0" />
+         </font>
+      </Label>
+      <MenuBar layoutX="1.0" layoutY="40.0" prefHeight="25.0" prefWidth="1022.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <Menu mnemonicParsing="false" text="Import to Excel">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Registered Members">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#importTermCount" text="Count By Terminal" />
+                            <MenuItem mnemonicParsing="false" onAction="#importByBranchCount" text="Count By Branch" />
+                              <MenuItem mnemonicParsing="false" onAction="#importRM" text="All Registered Members" />
+                          </items>
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" onAction="#importAll" text="All Members" />
+                     </items>
+                  </Menu>
+              <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#goToViewRegMem" text="Registered Members" />
+              <MenuItem mnemonicParsing="false" text="Reports" />
+            </items>
+          </Menu>
+          <Menu fx:id="account" mnemonicParsing="false" text="Account">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#goToAddUser" text="Add User" />
+                  <MenuItem mnemonicParsing="false" text="Edit User" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                <MenuItem mnemonicParsing="false" onAction="#about" text="About" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="767.0" layoutY="82.0" text="Registered from this Terminal:">
+         <font>
+            <Font name="Segoe UI Semibold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCounter" alignment="CENTER_RIGHT" layoutX="953.0" layoutY="81.0" prefHeight="19.0" prefWidth="39.0" text="9999">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

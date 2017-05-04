@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="body" prefHeight="728.0" prefWidth="1366.0" styleClass="body" stylesheets="@../CSS/Style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegistrationFormController">
+   <children>
+      <Pane fx:id="topBar" prefHeight="40.0" prefWidth="1366.0" styleClass="topBar" stylesheets="@../CSS/Style.css">
+         <children>
+            <Label fx:id="exit" alignment="CENTER" layoutX="1326.0" layoutY="1.0" onMouseClicked="#onExit" prefHeight="39.0" prefWidth="39.0" styleClass="exit" stylesheets="@../CSS/Style.css" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="minimize" alignment="CENTER" layoutX="1286.0" layoutY="1.0" onMouseClicked="#minimize" prefHeight="39.0" prefWidth="39.0" styleClass="minimize" stylesheets="@../CSS/Style.css" text="_" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="466.0" layoutY="5.0" text="General Assembly Registration System" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="back" onMouseClicked="#onBackPressed" prefHeight="39.0" prefWidth="45.0" styleClass="back" stylesheets="@../CSS/Style.css" />
+         </children>
+      </Pane>
+      <Label fx:id="branchName" alignment="CENTER" layoutX="5.0" layoutY="46.0" prefHeight="38.0" prefWidth="1280.0" text="Branch Name" textFill="#0d906d">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMembers" layoutX="742.0" layoutY="190.0" onMouseClicked="#selectMember" prefHeight="400.0" prefWidth="600.0" styleClass="table" stylesheets="@../CSS/Style.css">
+        <columns>
+          <TableColumn fx:id="tblId" prefWidth="203.0" text="CIF No" />
+          <TableColumn fx:id="tblName" prefWidth="397.0" text="Name" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="742.0" layoutY="147.0" onAction="#search" prefHeight="35.0" prefWidth="411.0" promptText="Type here to search">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button layoutX="1159.0" layoutY="147.0" mnemonicParsing="false" onAction="#search" prefHeight="35.0" prefWidth="183.0" styleClass="btnCam" stylesheets="@../CSS/Style.css" text="Search" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="922.0" layoutY="599.0" mnemonicParsing="false" onAction="#register" prefHeight="38.0" prefWidth="420.0" styleClass="btnCam" stylesheets="@../CSS/Style.css" text="REGISTER MEMBER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblCIF" alignment="CENTER" layoutX="14.0" layoutY="303.0" prefHeight="38.0" prefWidth="710.0">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" alignment="CENTER" layoutX="14.0" layoutY="341.0" prefHeight="40.0" prefWidth="710.0">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="435.0" text="Common Share:">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblComShare" alignment="CENTER_RIGHT" layoutX="382.0" layoutY="434.0" prefHeight="30.0" prefWidth="137.0" text="0.00">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="474.0" text="Preferred Share:">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrefShare" alignment="CENTER_RIGHT" layoutX="382.0" layoutY="474.0" prefHeight="30.0" prefWidth="137.0" text="0.00">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="151.0" layoutY="515.0" text="Fixed Deposit:">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFixDep" alignment="CENTER_RIGHT" layoutX="382.0" layoutY="515.0" prefHeight="30.0" prefWidth="137.0" text="0.00">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="561.0" text="Total:">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotal" alignment="CENTER_RIGHT" layoutX="382.0" layoutY="561.0" prefHeight="30.0" prefWidth="137.0" text="0.00">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName1" layoutX="168.0" layoutY="384.0" prefHeight="40.0" prefWidth="125.0" text="Pay Habit:">
+         <font>
+            <Font name="Segoe UI Semibold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="314.0" layoutY="384.0" prefHeight="40.0" prefWidth="330.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName3" layoutX="153.0" layoutY="645.0" prefHeight="40.0" prefWidth="162.0" text="Grand Prize Raffle:">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="GrandPrize" alignment="CENTER" layoutX="314.0" layoutY="645.0" prefHeight="40.0" prefWidth="330.0" textFill="#0d906d">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane id="pic" layoutX="250.0" layoutY="115.0" prefHeight="180.0" prefWidth="240.0" stylesheets="@../CSS/Style.css">
+         <children>
+            <ImageView fx:id="img" fitHeight="180.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <Button layoutX="742.0" layoutY="599.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="38.0" prefWidth="168.0" styleClass="btnCam" stylesheets="@../CSS/Style.css" text="Refresh Table" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="153.0" layoutY="605.0" text="Status:">
+         <font>
+            <Font name="Segoe UI Semibold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegistered" alignment="CENTER" layoutX="312.0" layoutY="601.0" prefHeight="40.0" prefWidth="330.0" textFill="#ff0008">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="1028.0" layoutY="56.0" prefHeight="20.0" prefWidth="44.0" text="ID:">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblID" layoutX="1087.0" layoutY="56.0" prefHeight="20.0" prefWidth="253.0" text="00000000000000">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="1122.0" layoutY="679.0" prefHeight="20.0" prefWidth="240.0" text="10:00 am">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="1122.0" layoutY="702.0" prefHeight="20.0" prefWidth="240.0" text="Wednesday, November 30, 2017">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="1028.0" layoutY="84.0" prefHeight="20.0" prefWidth="44.0" text="USER:">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUser" layoutX="1087.0" layoutY="84.0" prefHeight="20.0" prefWidth="253.0" text="Reymark Hernandez">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
